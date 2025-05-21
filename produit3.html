@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="a" class="logo"> 🛒 Deals.ly </a>
+            <div class="nav-links">
+                <a href="panier.html" class="cart-link" id="cart-link">🛒 Panier (<span id="cart-count">0</span>)</a>
+                <a href="acuiile.html#home">Home</a>
+                <a href="acuiile.html#menu">Menu</a>
+                <a href="acuiile.html#about">About</a>
+                <a href="gg.html">Se Connecter</a>
+                <a href="inscrire.html">S'Inscrire</a>
+            </div>
+        </div>
+    </nav>
+    <section id="homeproduit">
+        <div class="product-container">
+            <div class="product-image">
+                <img src="img4.jpg" alt="">
+                <div class="image-description">
+                    <h3>casio fx991 es plus</h3>
+                    <p>30.6 € -  UTHAI montre pour hommes à la mode haut de gamme lumière luxe polyvalent montres à Quartz étanche romain creux mâle horloge montre </p>
+                </div>
+            </div>
+            <div class="order-container">
+                <form class="order-form">
+                    <h2>🛒 Passer votre commande</h2>
+
+                    <div class="form-section">
+                        <h3>Informations personnelles</h3>
+                        <div class="form-group">
+                            <label for="fullname">Nom complet</label>
+                            <input type="text" id="fullname" placeholder="yacine lounnaci" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="votre@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" placeholder="06 12 34 56 78" required>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Adresse de livraison</h3>
+                        <div class="form-group">
+                            <label for="address">Adresse</label>
+                            <input type="text" id="address" placeholder="123 Rue des Exemples" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group" style="flex: 2;">
+                                <label for="city">Ville</label>
+                                <input type="text" id="city" placeholder="tizi ouzou" required>
+                            </div>
+
+                            <div class="form-group" style="flex: 1;">
+                                <label for="zipcode">Code postal</label>
+                                <input type="text" id="zipcode" placeholder="15000" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Méthode de paiement</h3>
+                        <div class="payment-methods">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" checked>
+                                <span>Carte bancaire</span>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="payment">
+                                <span>PayPal</span>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="payment">
+                                <span>À la livraison</span>
+                            </label>
+                        </div>
+
+
+
+                    </div>
+                    <button type="button" class="order-btn"
+                        onclick="window.location.href = 'merci.html'; alert('Merci pour votre commande !')">
+                        Confirmer la commande
+                    </button>
+                    <!-- Remplacez le formulaire de commande par ceci -->
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" data-id="produit3" data-name="casio fx991 es plus"
+                            data-price="30.6" data-image="img4.jpg">Ajouter au panier</button>
+                    </div>
+
+                    <script src="cart.js"></script>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We're passionate about creating the perfect burger experience using fresh, locally-sourced ingredient
+        </p>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>15122 bostos dep info</p>
+                <p>Contact@dealsly.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>quick Links</h3>
+                <p><a href="#home">Home</a></p>
+                <p><a href="#menu">Menu</a></p>
+                <p><a href="#about">About</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Opening Hourse</h3>
+                <p>Mon-Sun: 8h - 22h</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
